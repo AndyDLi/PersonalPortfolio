@@ -1,10 +1,13 @@
 import './App.css'
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { NavBar } from './components/NavBar.jsx';
 
-export default function App() {
-  
+function App() {
   return (
-    <div>
-      <h1>Beginning Project</h1>
+    <div className="App">
+      <NavBar />
     </div>
   );
 }
+
+export default App;
