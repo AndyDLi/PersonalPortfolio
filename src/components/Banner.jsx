@@ -8,7 +8,7 @@ export const Banner = () => {
     const [isDeleting, setIsDeleting] = useState(false);
     const toRotate = ['Software Developer', 'AI Enthusiast', 'Computer Science Student'];
     const [text, setText] = useState('');
-    const [delta, setDelta] = useState(300 - Math.random() * 100);
+    const [delta, setDelta] = useState(250);
     const transitionPeriod = 2000;
 
     useEffect(() => {
@@ -33,7 +33,7 @@ export const Banner = () => {
         else if (isDeleting && updatedText === '') {
             setIsDeleting(false);
             setLoopIndex(loopIndex + 1);
-            setDelta(500);
+            setDelta(250);
         }
     }
 
@@ -43,7 +43,7 @@ export const Banner = () => {
                 <Row className="align-items-center">
                     <Col xs={12} md={6} xl={7}>
                         <span classNam="tagline">Welcome to my Portfolio</span>
-                        <h1>{`Hi! I'm Andy`} <span className="wrap"></span>{text}</h1>
+                        <h1>{`Hi! I'm Andy,`} <span className="wrap"></span>{text}</h1>
                         <p>Computer Science Student @ Georgia Institute of Technology</p>
                         <button onClick={() => console.log("Button Clicked!")}>Let's Connect! <ArrowRightCircle size={25}/></button>
                     </Col>
