@@ -4,6 +4,7 @@ import { Routes, Route } from 'react-router-dom';
 import { NavBar } from './components/NavBar.jsx';
 import { Banner } from './components/Banner.jsx';
 import { Skills } from './components/Skills.jsx'; 
+import { Projects } from './components/Projects.jsx';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Banner />} />
         <Route path="/skills" element={<Skills />} />
+        <Route path='/projects' element={<Projects />} />
       </Routes>
     </div>
   );
