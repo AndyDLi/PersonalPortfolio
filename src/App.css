@@ -104,6 +104,10 @@ nav.navbar a.navbar-brand {
     width: 9%;
 }
 
+nav.navbar .navbar-brand img {
+  filter: brightness(175%);
+}
+
 nav.navbar .navbar-nav .nav-link.navbar-link {
   font-weight: 400;
   color: #fff !important;

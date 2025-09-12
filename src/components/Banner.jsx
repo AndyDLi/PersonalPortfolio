@@ -1,12 +1,11 @@
 import { useState, useEffect } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
-import { ArrowRightCircle } from 'react-bootstrap-icons';
 import headerImg from '../assets/images/header-img.svg';
 
 export const Banner = () => {
     const [loopIndex, setLoopIndex] = useState(0);
     const [isDeleting, setIsDeleting] = useState(false);
-    const toRotate = ['Software Developer', 'AI Enthusiast', 'Computer Science Student'];
+    const toRotate = ['Software Developer'];
     const [text, setText] = useState('');
     const [delta, setDelta] = useState(250);
     const transitionPeriod = 2000;
