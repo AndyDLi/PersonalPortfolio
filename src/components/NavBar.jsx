@@ -26,6 +26,8 @@ export const NavBar = () => {
                 return 'skills';
             case '/projects':
                 return 'projects';
+            case '/contact':
+                return 'contact';
             default:
                 return 'home';
         }
@@ -50,6 +52,9 @@ export const NavBar = () => {
                         </Nav.Link>
                         <Nav.Link as={Link} to="/projects" className={getActiveLink() === 'projects' ? "active navbar-link" : "navbar-link"}>
                             Projects
+                        </Nav.Link>
+                        <Nav.Link as={Link} to="/contact" className={getActiveLink() === 'contact' ? "active navbar-link" : "navbar-link"}>
+                            Contact
                         </Nav.Link>
                     </Nav>
 
