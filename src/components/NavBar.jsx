@@ -65,8 +65,8 @@ export const NavBar = () => {
                             <a href="#"><img src={navIcon3} alt="" /></a>
                         </div>
 
-                        <button className="vvd" onClick={() => console.log('Button Clicked!')}>
-                            <span>Let's Connect!</span>
+                        <button className="vvd" onClick={() => console.log('Button Clicked')}>
+                            <span>Contact Me</span>
                         </button>
                     </span>
                 </Navbar.Collapse>
