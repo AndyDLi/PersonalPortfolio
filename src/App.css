@@ -422,7 +422,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .project .nav.nav-pills {
   width: 72%;
-  margin: 0 auto;
+  margin: 30px auto;
   border-radius: 50px;
   background-color: rgb(255 255 255 / 10%);
   overflow: hidden;
@@ -482,14 +482,14 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border-radius: 0 55px 55px 0;
 }
 
-.proj-imgbx {
+.project-imgBox {
   position: relative;
   border-radius: 30px;
   overflow: hidden;
   margin-bottom: 24px;
 }
 
-.proj-imgbx::before {
+.project-imgBox::before {
   content: "";
   background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
   opacity: 0.85;
@@ -499,11 +499,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   transition: 0.4s ease-in-out;
 }
 
-.proj-imgbx:hover::before {
+.project-imgBox:hover::before {
   height: 100%;
 }
 
-.proj-txtx {
+.project-text {
   position: absolute;
   text-align: center;
   top: 65%;
@@ -514,19 +514,19 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   width: 100%;
 }
 
-.proj-imgbx:hover .proj-txtx {
+.project-imgBox:hover .project-text {
   top: 50%;
   opacity: 1;
 }
 
-.proj-txtx h4 {
+.project-text h4 {
   font-size: 30px;
   font-weight: 700;
   letter-spacing: 0.8px;
   line-height: 1.1em;
 }
 
-.proj-txtx span {
+.project-text span {
   font-style: italic;
   font-weight: 400;
   font-size: 15px;
