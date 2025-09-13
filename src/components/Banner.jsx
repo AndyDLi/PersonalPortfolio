@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
-import headerImg from '../assets/images/header-img.svg';
+// import headerImg from '../assets/images/header-img.svg';
+import logo from '../assets/images/logo.png';
 
 export const Banner = () => {
     const [loopIndex, setLoopIndex] = useState(0);
@@ -46,7 +47,7 @@ export const Banner = () => {
                         <p>Computer Science Student @ Georgia Institute of Technology</p>
                     </Col>
                     <Col xs={12} md={6} xl={5}>
-                        <img src={headerImg} alt="Header Image" />
+                        <img src={logo} alt="Logo Image" />
                     </Col>
                 </Row>
             </Container>

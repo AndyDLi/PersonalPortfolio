@@ -2,9 +2,12 @@ import { useState, useEffect } from 'react';
 import { Navbar, Container, Nav } from 'react-bootstrap';
 import { Link, useLocation } from 'react-router-dom';
 import logo from '../assets/images/logo.png';
-import navIcon1 from '../assets/images/nav-icon1.svg';
-import navIcon2 from '../assets/images/nav-icon2.svg';
-import navIcon3 from '../assets/images/nav-icon3.svg';
+import linkedInIcon from '../assets/images/linkedIn.svg';
+import gitHubIcon from '../assets/images/gitHub.png';
+import homeIcon from '../assets/images/home.webp';
+import personIcon from '../assets/images/person.png';
+import projectsIcon from '../assets/images/projects.png';
+import mailIcon from '../assets/images/mail.png';
 
 export const NavBar = () => {
     const [scrolled, setScrolled] = useState(false);
@@ -45,28 +48,31 @@ export const NavBar = () => {
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto">
                         <Nav.Link as={Link} to="/" className={getActiveLink() === 'home' ? "active navbar-link" : "navbar-link"}>
-                            Home
+                            <img src={homeIcon} alt="Home Icon" />
+                            <p>Home</p>
                         </Nav.Link>
                         <Nav.Link as={Link} to="/skills" className={getActiveLink() === 'skills' ? "active navbar-link" : "navbar-link"}>
-                            Skills
+                            <img src={personIcon} alt="Skills Icon" />
+                            <p>Skills</p>
                         </Nav.Link>
                         <Nav.Link as={Link} to="/projects" className={getActiveLink() === 'projects' ? "active navbar-link" : "navbar-link"}>
-                            Projects
+                            <img src={projectsIcon} alt="Projects Icon" />
+                            <p>Projects</p>
                         </Nav.Link>
                         <Nav.Link as={Link} to="/contact" className={getActiveLink() === 'contact' ? "active navbar-link" : "navbar-link"}>
-                            Contact
+                            <img src={mailIcon} alt="Contact Icon" />
+                            <p>Contact</p>
                         </Nav.Link>
                     </Nav>
 
                     <span className="navbar-text">
                         <div className="social-icon">
-                            <a href="#"><img src={navIcon1} alt="" /></a>
-                            <a href="#"><img src={navIcon2} alt="" /></a>
-                            <a href="#"><img src={navIcon3} alt="" /></a>
+                            <a href="https://www.linkedin.com/in/andyli8/" target="_blank"><img src={linkedInIcon} alt="" /></a>
+                            <a href="https://github.com/AndyDLi" target='_blank'><img src={gitHubIcon} alt="" /></a>
                         </div>
 
-                        <button className="vvd" onClick={() => console.log('Button Clicked')}>
-                            <span>Contact Me</span>
+                        <button className="vvd">
+                            <a href="/contact"><span>Contact Me</span></a>
                         </button>
                     </span>
                 </Navbar.Collapse>
