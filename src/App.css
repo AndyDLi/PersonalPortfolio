@@ -320,6 +320,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   height: 100vh;
 }
 
+.banner .banner-container {
+  margin-top: -45px;
+}
+
 .banner .tagline {
   font-weight: 700;
   letter-spacing: 0.8px;
@@ -349,19 +353,25 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 .banner img {
-  animation: updown 3s linear infinite;
-  filter: brightness(150%);
+  animation: moveInCircleWithDepth 5s linear infinite;
+  filter: brightness(90%);
 }
 
-@keyframes updown {
+@keyframes moveInCircleWithDepth {
     0% {
-        transform: translateY(-30px);
+        transform: translateY(0px) translateX(0px) scale(1);
+    }
+    25% {
+        transform: translateY(-30px) translateX(30px) scale(0.925);
     }
     50% {
-        transform: translateY(30px);
+        transform: translateY(0px) translateX(60px) scale(0.875);
+    }
+    75% {
+        transform: translateY(30px) translateX(30px) scale(0.925);
     }
     100% {
-        transform: translateY(-30px);
+        transform: translateY(0px) translateX(0px) scale(1);
     }
 }
 
