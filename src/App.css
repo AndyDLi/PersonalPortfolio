@@ -136,15 +136,15 @@ nav.navbar .navbar-nav a.nav-link.navbar-link img {
 }
 
 nav.navbar .navbar-nav a.nav-link.navbar-link:nth-child(1) img {
-  filter: brightness(175%);
+  filter: brightness(200%);
 }
 
 nav.navbar .navbar-nav a.nav-link.navbar-link:nth-child(2) img {
-  filter: brightness(50%);
+  filter: brightness(125%);
 }
 
-nav.navbar .navbar-nav a.nav-link.navbar-link:nth-child(4) img {
-  filter: brightness(160%);
+nav.navbar .navbar-nav a.nav-link.navbar-link:nth-child(3) img {
+  filter: brightness(200%);
 }
 
 nav.navbar .navbar-nav a.nav-link.navbar-link p {
