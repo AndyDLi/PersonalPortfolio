@@ -29,7 +29,7 @@ export const Skills = () => {
 
     return (
         <section className="skill" id="skills">
-            <Container>
+            <Container className="skill-container">
                 <Row>
                     <Col>
                         <div className="skill-bx">

@@ -373,9 +373,13 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .skill {
   padding: 0 0 50px 0;
+  height: 100vh;
   position: relative;
-  margin-top: 200px;
   overflow: hidden;
+}
+
+.skill .skill-container {
+  margin-top: 200px;
 }
 
 .skill-bx {
@@ -424,12 +428,13 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .project {
   padding: 80px 0;
+  height: 100vh;
   position: relative;
   background-color: black;
 }
 
 .project .project-container {
-  margin-top: 25px;
+  margin-top: 40px;
 }
 
 .project h2 {
@@ -448,19 +453,19 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   width: 56%;
 }
 
-.project .nav.nav-pills {
+/* .project .nav.nav-pills {
   width: 72%;
   margin: 30px auto;
   border-radius: 50px;
   background-color: rgb(255 255 255 / 10%);
   overflow: hidden;
-}
+} */
 
-.project .nav.nav-pills .nav-item {
+/* .project .nav.nav-pills .nav-item {
   width: 33.33333%;
-}
+} */
 
-.project .nav.nav-pills .nav-link {
+/* .project .nav.nav-pills .nav-link {
   background-color: transparent;
   border-radius: 0;
   padding: 17px 0;
@@ -473,9 +478,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   transition: 0.3s ease-in-out;
   text-align: center;
   z-index: 0;
-}
+} */
 
-.project .nav.nav-pills .nav-link::before {
+/* .project .nav.nav-pills .nav-link::before {
     content: "";
     position: absolute;
     width: 0;
@@ -508,9 +513,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .nav-link#projects-tabs-tab-third {
   border: 1px solid rgba(255, 255, 255, 0.5);
   border-radius: 0 55px 55px 0;
-}
+} */
 
 .project-imgBox {
+  margin-top: 20px;
   position: relative;
   border-radius: 30px;
   overflow: hidden;
@@ -561,20 +567,16 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   letter-spacing: 0.8px;
 }
 
-.background-image-right {
-  top: 20%;
-  position: absolute;
-  bottom: 0;
-  width: 35%;
-  right: 0;
-  z-index: -4;
-}
-
 /* Contact CSS */
 
 .contact {
-  background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
+  background: linear-gradient(90.21deg, #750d4c -5.91%, #4A2FBD 111.58%);
+  height: 100vh;
   padding: 60px 0 200px 0;
+}
+
+.contact .contact-container {
+  margin-top: 100px;
 }
 
 .contact img {
