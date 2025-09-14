@@ -458,7 +458,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .banner img {
   animation: moveInCircleWithDepth 5s linear infinite;
-  filter: brightness(90%);
+  filter: brightness(110%);
 }
 
 @keyframes moveInCircleWithDepth {
