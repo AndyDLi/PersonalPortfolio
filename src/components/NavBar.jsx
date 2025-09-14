@@ -78,16 +78,16 @@ export const NavBar = () => {
                                 <p>Home</p>
                             </Nav.Link>
 
-                            <Nav.Link as={Link} to="/skills" className={getActiveLink() === 'skills' ? "active navbar-link" : "navbar-link"} onClick={handleNavClick}>
+                            {/* <Nav.Link as={Link} to="/skills" className={getActiveLink() === 'skills' ? "active navbar-link" : "navbar-link"} onClick={handleNavClick}>
                                 <img src={personIcon} alt="Skills Icon" />
                                 <p>Skills</p>
-                            </Nav.Link>
+                            </Nav.Link> */}
 
                             <Nav.Link as={Link} to="/projects" className={getActiveLink() === 'projects' ? "active navbar-link" : "navbar-link"} onClick={handleNavClick}>
                                 <img src={projectsIcon} alt="Projects Icon" />
                                 <p>Projects</p>
                             </Nav.Link>
-                            
+
                             <Nav.Link as={Link} to="/contact" className={getActiveLink() === 'contact' ? "active navbar-link" : "navbar-link"} onClick={handleNavClick}>
                                 <img src={mailIcon} alt="Contact Icon" />
                                 <p>Contact</p>

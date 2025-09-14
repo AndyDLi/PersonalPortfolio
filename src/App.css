@@ -69,6 +69,12 @@ input:focus, textarea:focus, select:focus {
   outline: none;
 }
 
+/* Utility Classes */
+.transition-smooth {
+  transition: all 0.3s ease-in-out;
+}
+
+/* Responsive Utilities */
 @media (min-width:1700px) {
 	main .container {
 		max-width: 100%;
@@ -82,6 +88,7 @@ input:focus, textarea:focus, select:focus {
   }
 }
 
+/* Status Messages */
 p.success {
 	color: green;
 }
@@ -173,6 +180,7 @@ span.navbar-text {
     justify-content: center;
     line-height: 1;
     border: 1px solid rgba(255, 255, 255, 0.5);
+    position: relative;
 }
 
 .social-icon a::before {
@@ -196,10 +204,12 @@ span.navbar-text {
 	transition: 0.3s ease-in-out;
 }
 
+/* LinkedIn Icon (odd child) */
 .social-icon a:nth-child(odd):hover img {
 	filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rotate(346deg) brightness(95%) contrast(86%);
 }
 
+/* GitHub Icon (even child) */
 .social-icon a:nth-child(2) img {
   filter: invert(1);
   transform: scale(1.5);
@@ -230,6 +240,7 @@ span.navbar-text {
 
 .navbar-text button span {
   z-index: 1;
+  position: relative;
 }
 
 .navbar-text button::before {
@@ -249,10 +260,7 @@ span.navbar-text {
 }
 
 .navbar-text button:hover::before {
-	content: "";
-	width: 100%;
-	height: 100%;
-	position: absolute;
+  width: 100%;
 }
 
 nav.navbar .navbar-toggler:active,
@@ -485,7 +493,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 .skill .skill-container {
-  margin-top: 200px;
+  margin-top: 140px;
 }
 
 .skill-bx {
@@ -493,13 +501,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border-radius: 64px;
   text-align: center;
   padding: 60px 50px;
-  margin-top: -60px;
 }
 
 .skill h2 {
 	font-size: 45px;
 	font-weight: 700;
-  margin-top: 40px;
 }
 
 .skill p {
@@ -559,68 +565,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   width: 56%;
 }
 
-/* .project .nav.nav-pills {
-  width: 72%;
-  margin: 30px auto;
-  border-radius: 50px;
-  background-color: rgb(255 255 255 / 10%);
-  overflow: hidden;
-} */
-
-/* .project .nav.nav-pills .nav-item {
-  width: 33.33333%;
-} */
-
-/* .project .nav.nav-pills .nav-link {
-  background-color: transparent;
-  border-radius: 0;
-  padding: 17px 0;
-  color: #fff;
-  width: 100%;
-  font-size: 17px;
-  letter-spacing: 0.8px;
-  font-weight: 500;
-  position: relative;
-  transition: 0.3s ease-in-out;
-  text-align: center;
-  z-index: 0;
-} */
-
-/* .project .nav.nav-pills .nav-link::before {
-    content: "";
-    position: absolute;
-    width: 0;
-    height: 100%;
-    background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
-    top: 0;
-    left: 0;
-    z-index: -1;
-    transition: 0.3s ease-in-out;
-}
-
-.project .nav.nav-pills .nav-link.active::before {
-    width: 100% !important;
-}
-
-.project .nav.nav-pills .nav-link.active {
-    border: 1px solid rgba(255, 255, 255, 1);
-}
-
-.nav-link#projects-tabs-tab-first {
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  border-radius: 55px 0px 0px 55px;
-}
-
-.nav-link#projects-tabs-tab-second {
-  border-top: 1px solid rgba(255, 255, 255, 0.5);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-}
-
-.nav-link#projects-tabs-tab-third {
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  border-radius: 0 55px 55px 0;
-} */
-
 .project-imgBox {
   margin-top: 20px;
   position: relative;
@@ -677,7 +621,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .contact {
   background: linear-gradient(90.21deg, #750d4c -5.91%, #4A2FBD 111.58%);
-  height: 100vh;
+  height: 100%;
   padding: 60px 0 200px 0;
 }
 
