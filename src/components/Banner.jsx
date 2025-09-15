@@ -5,9 +5,9 @@ import bannerPhoto from '../assets/images/bannerPhoto.png';
 export const Banner = () => {
     const [loopIndex, setLoopIndex] = useState(0);
     const [isDeleting, setIsDeleting] = useState(false);
-    const toRotate = ['Software Developer'];
+    const toRotate = ['Software Developer', 'Exploring AI/ML', 'Studying Cybersecurity'];
     const [text, setText] = useState('');
-    const [delta, setDelta] = useState(250);
+    const [delta, setDelta] = useState(200);
     const transitionPeriod = 2000;
 
     useEffect(() => {
@@ -32,7 +32,7 @@ export const Banner = () => {
         else if (isDeleting && updatedText === '') {
             setIsDeleting(false);
             setLoopIndex(loopIndex + 1);
-            setDelta(250);
+            setDelta(200);
         }
     }
 
