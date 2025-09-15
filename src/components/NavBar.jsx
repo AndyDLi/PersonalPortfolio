@@ -101,7 +101,7 @@ export const NavBar = () => {
                             </div>
 
                             <button className="vvd">
-                                <a href="/contact"><span>Contact Me</span></a>
+                                <Link to="/contact" onClick={handleNavClick}><span>Contact Me</span></Link>
                             </button>
                         </span>
                     </Navbar.Collapse>
