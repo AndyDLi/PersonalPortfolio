@@ -5,17 +5,14 @@
 [![Live Demo](https://img.shields.io/badge/demo-online-success?style=for-the-badge)](https://andyli-portfolio.vercel.app/)
 [![React](https://img.shields.io/badge/React-19.1.1-61DAFB?style=for-the-badge&logo=react&logoColor=white)](https://reactjs.org/)
 [![Vite](https://img.shields.io/badge/Vite-7.1.2-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vitejs.dev/)
-[![License](https://img.shields.io/badge/license-MIT-blue?style=for-the-badge)](LICENSE)
 
-**A Modern, Responsive Portfolio Showcasing My Journey as a Computer Science Student at Georgia Institute of Technology**
+**A Responsive Portfolio Showcasing My Journey as a Computer Science Student at Georgia Institute of Technology**
 
 [Live Demo](https://andyli-portfolio.vercel.app/) · [Report Bug](https://github.com/AndyDLi/PersonalPortfolio/issues) · [Request Feature](https://github.com/AndyDLi/PersonalPortfolio/issues)
 
 </div>
 
 ---
-
-## 📸 Preview
 
 <div align="center">
   <img width="900" alt="Portfolio Preview" src="https://github.com/user-attachments/assets/4c99d9a6-a810-41e4-ad91-b72d077f6581" />
@@ -38,7 +35,6 @@
 
 ### ⚡ **Performance**
 - **Vite Build Tool** - Lightning-fast HMR and optimized production builds
-- **SWC Compiler** - Faster compilation with Speedy Web Compiler
 - **Fixed Navigation** - Scroll-aware navbar with smooth transitions
 
 ---
@@ -61,7 +57,6 @@
 ![npm](https://img.shields.io/badge/npm-Package_Manager-CB3837?style=flat-square&logo=npm&logoColor=white)
 
 ### **Backend (Contact Form)**
-![Express](https://img.shields.io/badge/Express-5.1.0-000000?style=flat-square&logo=express&logoColor=white)
 ![Nodemailer](https://img.shields.io/badge/Nodemailer-7.0.6-339933?style=flat-square&logo=nodemailer&logoColor=white)
 
 ### **Deployment**
@@ -118,6 +113,17 @@ npm run preview
 
 ---
 
+## 📜 Available Scripts
+
+| Command | Description |
+|---------|-------------|
+| `npm run dev` | Start development server with HMR |
+| `npm run build` | Build for production |
+| `npm run preview` | Preview production build locally |
+| `npm run lint` | Run ESLint for code quality checks |
+
+---
+
 ## 📁 Project Structure
 
 ```
@@ -147,133 +153,6 @@ PersonalPortfolio/
 
 ---
 
-## 🎯 Key Components
-
-### **NavBar** 
-- Fixed navigation with scroll detection
-- Responsive hamburger menu with blur overlay
-- Active route highlighting
-- Social media integration
-
-### **Banner**
-- Animated typewriter effect rotating through:
-  - Software Developer
-  - Exploring AI/ML
-  - Studying Cybersecurity
-- Circular image animation with depth effect
-
-### **Projects**
-- Grid-based project gallery
-- Hover-activated gradient overlays
-- Dynamic project card rendering
-- Tab-based filtering (ready for expansion)
-
-### **Contact**
-- Controlled form components
-- Real-time validation
-- FormSubmit.co integration for email delivery
-- Responsive two-column layout
-
----
-
-## 🎨 Design Highlights
-
-### **Color Palette**
-```css
-Primary Background:  #121212 (Rich Black)
-Text:                #FFFFFF (White)
-Secondary Text:      #B8B8B8 (Silver)
-Accent Gradient:     #AA367C → #4A2FBD (Purple to Pink)
-```
-
-### **Typography**
-- **Font Family:** Centra (Custom)
-- **Weights:** 400 (Book), 500 (Medium), 700 (Bold)
-
-### **Animations**
-- Typewriter text effect with variable speed
-- Circular motion with scale transformation
-- Gradient overlay slide-up on hover
-- Button background slide-in effects
-- Social icon scale animations
-
----
-
-## 📜 Available Scripts
-
-| Command | Description |
-|---------|-------------|
-| `npm run dev` | Start development server with HMR |
-| `npm run build` | Build for production |
-| `npm run preview` | Preview production build locally |
-| `npm run lint` | Run ESLint for code quality checks |
-
----
-
-## 🌐 Deployment
-
-This portfolio is deployed on **Vercel** with automatic deployments from the main branch.
-
-### Deploy Your Own
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/AndyDLi/PersonalPortfolio)
-
-### Manual Deployment Steps
-
-1. Build the project: `npm run build`
-2. Upload the `dist/` directory to your hosting provider
-3. Configure the server to serve `index.html` for all routes (SPA)
-
----
-
-## 🔧 Configuration
-
-### Environment Variables
-
-Create a `.env` file in the root directory (optional):
-
-```env
-VITE_BASE_PATH=/PersonalPortfolio
-```
-
-### Vite Config
-
-```javascript
-export default defineConfig({
-  plugins: [react()],
-  base: process.env.VITE_BASE_PATH || '/PersonalPortfolio',
-})
-```
-
----
-
-## 📊 Performance
-
-- **Lighthouse Score:** 95+ (Performance, Accessibility, Best Practices)
-- **First Contentful Paint:** < 1.5s
-- **Time to Interactive:** < 3.0s
-- **Bundle Size:** ~200KB (gzipped)
-
----
-
-## 🤝 Contributing
-
-Contributions, issues, and feature requests are welcome!
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
----
-
-## 📝 License
-
-This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
-
----
-
 ## 👤 Author
 
 **Andy Li**
@@ -285,29 +164,3 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 - 🌐 Portfolio: [andyli-portfolio.vercel.app](https://andyli-portfolio.vercel.app/)
 
 ---
-
-## 🙏 Acknowledgments
-
-- **React Team** - For the incredible framework
-- **Vite** - For blazing-fast build tooling
-- **Bootstrap** - For the responsive grid system
-- **FormSubmit.co** - For free form handling service
-- **Vercel** - For seamless deployment and hosting
-
----
-
-## 📚 Additional Documentation
-
-For detailed technical documentation, architecture decisions, and code examples, see:
-
-- [**CODEBASE_DOCUMENTATION.md**](CODEBASE_DOCUMENTATION.md) - Comprehensive technical documentation
-
----
-
-<div align="center">
-
-**⭐ Star this repository if you found it helpful!**
-
-Made with ❤️ and React
-
-</div>
