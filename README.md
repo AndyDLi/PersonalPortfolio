@@ -20,6 +20,17 @@
 
 ---
 
+## 📋 Table of Contents
+
+- [✨ Features](#-features)
+- [🛠️ Tech Stack](#️-tech-stack)
+- [🚀 Getting Started](#-getting-started)
+- [📜 Available Scripts](#-available-scripts)
+- [📁 Project Structure](#-project-structure)
+- [👤 Author](#-author)
+
+---
+
 ## ✨ Features
 
 ### 🎨 **Modern UI/UX**
