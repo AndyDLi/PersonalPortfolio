@@ -4,10 +4,6 @@ import { Link, useLocation } from 'react-router-dom';
 import logo from '../assets/images/logo.png';
 import linkedInIcon from '../assets/images/linkedIn.svg';
 import gitHubIcon from '../assets/images/gitHub.png';
-import homeIcon from '../assets/images/home.webp';
-import personIcon from '../assets/images/person.png';
-import projectsIcon from '../assets/images/projects.png';
-import mailIcon from '../assets/images/mail.png';
 
 export const NavBar = () => {
     const [scrolled, setScrolled] = useState(false);
@@ -26,8 +22,6 @@ export const NavBar = () => {
         switch(location.pathname) {
             case '/':
                 return 'home';
-            case '/skills':
-                return 'skills';
             case '/projects':
                 return 'projects';
             case '/contact':
@@ -74,35 +68,30 @@ export const NavBar = () => {
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="me-auto">
                             <Nav.Link as={Link} to="/" className={getActiveLink() === 'home' ? "active navbar-link" : "navbar-link"} onClick={handleNavClick}>
-                                <img src={homeIcon} alt="Home Icon" />
-                                <p>Home</p>
+                                <span className="nav-emoji">🏠</span>
+                                <span className="nav-label">Home</span>
                             </Nav.Link>
 
-                            {/* <Nav.Link as={Link} to="/skills" className={getActiveLink() === 'skills' ? "active navbar-link" : "navbar-link"} onClick={handleNavClick}>
-                                <img src={personIcon} alt="Skills Icon" />
-                                <p>Skills</p>
-                            </Nav.Link> */}
-
                             <Nav.Link as={Link} to="/projects" className={getActiveLink() === 'projects' ? "active navbar-link" : "navbar-link"} onClick={handleNavClick}>
-                                <img src={projectsIcon} alt="Projects Icon" />
-                                <p>Projects</p>
+                                <span className="nav-emoji">📂</span>
+                                <span className="nav-label">Projects</span>
                             </Nav.Link>
 
                             <Nav.Link as={Link} to="/contact" className={getActiveLink() === 'contact' ? "active navbar-link" : "navbar-link"} onClick={handleNavClick}>
-                                <img src={mailIcon} alt="Contact Icon" />
-                                <p>Contact</p>
+                                <span className="nav-emoji">✉️</span>
+                                <span className="nav-label">Contact</span>
                             </Nav.Link>
                         </Nav>
 
                         <span className="navbar-text">
                             <div className="social-icon">
-                                <a href="https://www.linkedin.com/in/andyli8/" target="_blank"><img src={linkedInIcon} alt="" /></a>
-                                <a href="https://github.com/AndyDLi" target='_blank'><img src={gitHubIcon} alt="" /></a>
+                                <a href="https://www.linkedin.com/in/andyli8/" target="_blank" className="social-linkedin" aria-label="LinkedIn"><img src={linkedInIcon} alt="LinkedIn" /></a>
+                                <a href="https://github.com/AndyDLi" target='_blank' className="social-github" aria-label="GitHub"><img src={gitHubIcon} alt="GitHub" /></a>
                             </div>
 
-                            <button className="vvd">
-                                <Link to="/contact" onClick={handleNavClick}><span>Contact Me</span></Link>
-                            </button>
+                            <Link to="/contact" className="contact-btn" onClick={handleNavClick}>
+                                <span>✦ Let's Talk</span>
+                            </Link>
                         </span>
                     </Navbar.Collapse>
                 </Container>

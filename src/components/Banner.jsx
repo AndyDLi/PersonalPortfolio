@@ -43,13 +43,19 @@ export const Banner = () => {
                     <Col xs={12} md={6} xl={7}>
                         <span className="tagline">Welcome to my Portfolio</span>
                         <h1>{`Hi! I'm Andy,`} <span className="wrap"></span>{text}</h1>
-                        <p>Computer Science Student @ Georgia Institute of Technology</p>
+                        <p>Computer Science Student @ <span className="gt-gold">Georgia Institute of Technology</span></p>
                     </Col>
                     <Col xs={12} md={6} xl={5}>
-                        <img src={bannerPhoto} alt="Logo Image" />
+                        <div className="banner-img-wrapper">
+                            <div className="notion-shape shape-circle"></div>
+                            <div className="notion-shape shape-square"></div>
+                            <div className="notion-shape shape-dots"></div>
+                            <img src={bannerPhoto} alt="Logo Image" />
+                        </div>
                     </Col>
                 </Row>
             </Container>
+            <div className="banner-accent-bar"></div>
         </section>
     );
 }

@@ -22,10 +22,19 @@ export const Contact = () => {
  
     return (
         <section className="contact" id="connect">
+            {/* Notion decorative shapes — unique to Contact */}
+            <div className="notion-shape contact-shape-plus"></div>
+            <div className="notion-shape contact-shape-bracket"></div>
+            <div className="notion-shape contact-shape-dash-row"></div>
             <Container className="contact-container">
                 <Row className="align-items-center">
                     <Col md={6}>
                         <img src={contactImg} alt="Contact Me" />
+                        <div className="contact-info-callout">
+                            <span className="callout-icon">📬</span>
+                            <span className="callout-text">I Typically Respond Within 24 Hours.</span>
+                        </div>
+
                     </Col>
 
                     <Col md={6}>
