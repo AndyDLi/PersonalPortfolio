@@ -5,7 +5,7 @@ import bannerPhoto from '../assets/images/bannerPhoto.png';
 export const Banner = () => {
     const [loopIndex, setLoopIndex] = useState(0);
     const [isDeleting, setIsDeleting] = useState(false);
-    const toRotate = ['Software Developer', 'Exploring AI/ML', 'Studying Cybersecurity'];
+    const toRotate = ['Software Engineer', 'Machine & Deep Learning Engineer', 'AI Agent Architect'];
     const [text, setText] = useState('');
     const [delta, setDelta] = useState(200);
     const transitionPeriod = 2000;
