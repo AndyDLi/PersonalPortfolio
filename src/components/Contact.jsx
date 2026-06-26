@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
-import contactImg from '../assets/images/contact-img.svg';
+import contactImg from '../assets/images/contact.png';
 
 export const Contact = () => {
   const formInitialDetails = {
@@ -26,9 +26,11 @@ export const Contact = () => {
         <Row className="align-items-center g-5">
           <Col md={6}>
             <div className="contact-visual">
-              <img src={contactImg} alt="Illustration for the contact section" />
+              <div className="contact-img-wrapper">
+                <img src={contactImg} alt="Communication illustration" />
+              </div>
               <div className="contact-info-callout">
-                <span className="callout-icon" aria-hidden="true">✉</span>
+                <span className="callout-icon" aria-hidden="true">&#9993;</span>
                 <span className="callout-text">I typically respond within 24 hours.</span>
               </div>
             </div>
@@ -37,7 +39,7 @@ export const Contact = () => {
           <Col md={6}>
             <div className="contact-form-shell compact-contact-shell">
               <span className="form-kicker">Get in touch</span>
-              <h2>Let&apos;s Talk.</h2>
+              <h2>Let&apos;s Talk!</h2>
               <form method="POST" action="https://formsubmit.co/andy.dang.li@gmail.com" target="_blank">
                 <Row>
                   <Col sm={6} className="px-1">

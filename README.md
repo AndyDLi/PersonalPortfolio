@@ -6,7 +6,7 @@
 [![React](https://img.shields.io/badge/React-19.1.1-61DAFB?style=for-the-badge&logo=react&logoColor=white)](https://reactjs.org/)
 [![Vite](https://img.shields.io/badge/Vite-7.1.2-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vitejs.dev/)
 
-**A Responsive Portfolio Showcasing My Journey as a Computer Science Student at Georgia Institute of Technology**
+**A responsive portfolio for my work and background as a Computer Science student at Georgia Institute of Technology**
 
 [Live Demo](https://andyli-portfolio.vercel.app/) · [Report Bug](https://github.com/AndyDLi/PersonalPortfolio/issues) · [Request Feature](https://github.com/AndyDLi/PersonalPortfolio/issues)
 
@@ -33,20 +33,20 @@
 
 ## ✨ Features
 
-### 🎨 **Modern UI/UX**
-- **Smooth Animations** - Custom typewriter effect, circular image motion, and gradient overlays
-- **Responsive Design** - Fully optimized for mobile, tablet, and desktop devices
-- **Interactive Elements** - Hover effects, transitions, and dynamic navigation states
+### 🎨 **Interface**
+- **Responsive Layout** - Adapts to desktop, tablet, and mobile screens.
+- **Page Transitions** - Uses subtle animation and hover states for navigation and cards.
+- **Home Banner** - Includes a typewriter-style role headline and portrait section.
 
 ### 🧩 **Core Functionality**
-- **Dynamic Routing** - Client-side routing with React Router for seamless navigation
-- **Project Gallery** - Showcase projects with hover-reveal details and grid layout
-- **Contact Integration** - Functional contact form with email delivery via FormSubmit.co
-- **Social Media Links** - Direct connections to LinkedIn and GitHub profiles
+- **Client-Side Routing** - Uses React Router for home, projects, and contact pages.
+- **Project Gallery** - Displays project cards with preview images and short descriptions.
+- **Contact Form** - Submits messages through FormSubmit.co.
+- **Social Links** - Provides LinkedIn and GitHub profile links.
 
-### ⚡ **Performance**
-- **Vite Build Tool** - Lightning-fast HMR and optimized production builds
-- **Fixed Navigation** - Scroll-aware navbar with smooth transitions
+### ⚡ **Build & Navigation**
+- **Vite Tooling** - Provides local development, production builds, and preview support.
+- **Fixed Navigation** - Includes active route styling and responsive menu behavior.
 
 ---
 
@@ -67,8 +67,8 @@
 ![ESLint](https://img.shields.io/badge/ESLint-9.33.0-4B32C3?style=flat-square&logo=eslint&logoColor=white)
 ![npm](https://img.shields.io/badge/npm-Package_Manager-CB3837?style=flat-square&logo=npm&logoColor=white)
 
-### **Backend (Contact Form)**
-![Nodemailer](https://img.shields.io/badge/Nodemailer-7.0.6-339933?style=flat-square&logo=nodemailer&logoColor=white)
+### **Contact Form**
+![FormSubmit](https://img.shields.io/badge/FormSubmit.co-Contact_Form-2f6f4e?style=flat-square)
 
 ### **Deployment**
 ![Vercel](https://img.shields.io/badge/Vercel-Deployed-000000?style=flat-square&logo=vercel&logoColor=white)
@@ -79,8 +79,8 @@
 
 ### Prerequisites
 
-- **Node.js** (v18.0.0 or higher)
-- **npm** (v9.0.0 or higher)
+- **Node.js** (`^20.19.0` or `>=22.12.0`)
+- **npm**
 
 ### Installation
 
@@ -105,8 +105,8 @@
    ```
 
 5. **Open your browser**
-   
-   Navigate to `http://localhost:5173` (Vite's default port)
+
+   Vite prints the local URL in the terminal. The default is usually `http://localhost:5173`.
 
 ### Build for Production
 
@@ -114,7 +114,7 @@
 npm run build
 ```
 
-Output will be in the `dist/` directory.
+Output is written to the `dist/` directory.
 
 ### Preview Production Build
 
@@ -128,10 +128,10 @@ npm run preview
 
 | Command | Description |
 |---------|-------------|
-| `npm run dev` | Start development server with HMR |
+| `npm run dev` | Start the Vite development server |
 | `npm run build` | Build for production |
-| `npm run preview` | Preview production build locally |
-| `npm run lint` | Run ESLint for code quality checks |
+| `npm run preview` | Preview the production build locally |
+| `npm run lint` | Run ESLint |
 
 ---
 
@@ -143,22 +143,21 @@ PersonalPortfolio/
 ├── src/
 │   ├── assets/
 │   │   ├── fonts/             # Custom Centra font family
-│   │   └── images/            # Images, icons, and graphics
+│   │   └── images/            # Images and icons used by the app
 │   ├── components/
 │   │   ├── NavBar.jsx         # Navigation with responsive menu
-│   │   ├── Banner.jsx         # Hero section with typewriter effect
-│   │   ├── Skills.jsx         # Skills carousel (placeholder)
+│   │   ├── Banner.jsx         # Home banner with typewriter effect
 │   │   ├── Projects.jsx       # Portfolio gallery container
 │   │   ├── ProjectCard.jsx    # Individual project card component
-│   │   └── Contact.jsx        # Contact form with validation
+│   │   └── Contact.jsx        # Contact form page
 │   ├── App.jsx                # Root component with routing
-│   ├── App.css                # Main stylesheet (707 lines)
+│   ├── App.css                # Main stylesheet
 │   ├── main.jsx               # React entry point
 │   └── index.css              # Global styles
 ├── index.html                 # HTML template
-├── package.json               # Dependencies & scripts
+├── package.json               # Dependencies and scripts
 ├── vite.config.js             # Vite configuration
-├── eslint.config.js           # ESLint rules
+├── eslint.config.js           # ESLint configuration
 └── README.md                  # Project documentation
 ```
 

@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
-import bannerPhoto from '../assets/images/bannerPhoto.png';
+import heroImage from '../assets/images/hero.png';
 
 const roles = [
   'Software Engineer',
@@ -57,7 +57,7 @@ export const Banner = () => {
           </Col>
           <Col xs={12} md={6} xl={5}>
             <div className="banner-img-wrapper">
-              <img src={bannerPhoto} alt="Portrait of Andy Li" />
+              <img src={heroImage} alt="Software engineering workspace illustration" />
             </div>
           </Col>
         </Row>
