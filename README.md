@@ -15,7 +15,7 @@
 ---
 
 <div align="center">
-  <img width="900" alt="Portfolio Preview" src="https://github.com/user-attachments/assets/4c99d9a6-a810-41e4-ad91-b72d077f6581" />
+  <img width="900" alt="Portfolio Preview" src="https://github.com/user-attachments/assets/d2428bee-bc90-4382-9fb6-942c1b507387" />
 </div>
 
 ---
